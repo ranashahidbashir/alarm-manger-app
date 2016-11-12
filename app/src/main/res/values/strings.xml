@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Alarm Manger</string>
+    <string name="btn_add_label">Add</string>
+    <string name="main_act_label">Alarm List</string>
+    <string name="add_alarm_frag_label">Add Alarm</string>
+    <string name="dialog_del_alarm_label">Delete Alarm!</string>
+    <string name="dialog_del_alarm_msg">Are you sure you want to delete this Alarm?</string>
+
+    <string name="msg_wrong_date_time">Select Valid Date &amp; Time</string>
+    <string name="msg_alarm_wakeup">Wake Up! Wake Up!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

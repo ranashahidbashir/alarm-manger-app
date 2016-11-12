@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/m5"
+
+    >
+
+
+    <RelativeLayout
+
+        android:id="@+id/rl_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_toLeftOf="@+id/iv_delete">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="false"
+
+            android:textSize="@dimen/m2"
+
+            />
+
+        <TextView
+
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/m2"
+            android:layout_toRightOf="@+id/tv_time"
+
+            android:clickable="false"
+
+            android:textSize="@dimen/m3"
+
+
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_delete" />
+
+
+</RelativeLayout>

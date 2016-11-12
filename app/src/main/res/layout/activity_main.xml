@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+
+        >
+        <RelativeLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="@dimen/m4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/m2"
+                android:textStyle="bold"
+                android:text="@string/main_act_label"
+                />
+
+            <ImageView
+
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:src="@drawable/ic_add"
+                android:layout_marginRight="@dimen/m4"
+                android:padding="@dimen/m5"
+                android:onClick="addAlarm"
+                android:background="@android:color/holo_blue_light"
+               />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_header"
+
+            />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_add_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:visibility="gone">
+
+
+    </FrameLayout>
+</RelativeLayout>
